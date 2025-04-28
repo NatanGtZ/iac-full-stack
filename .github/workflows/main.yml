@@ -39,8 +39,8 @@ jobs:
            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       
        - name: Run Pulumi 
-       - id: run-pulumi
-       - uses: pulumi/actions@v6
+         id: run-pulumi
+         uses: pulumi/actions@v6
          with:
           command: up
           stack-name: NatanGtZ/stg
