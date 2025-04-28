@@ -1,14 +1,14 @@
 import * as aws from "@pulumi/aws";
 
 const firstBucket = new aws.s3.BucketV2("primeiro-bucket", {
-  bucket: 'primeiro-bucket-pos-full-stack-360',
+  bucket: 'primeiro-bucket-pos',
   tags: {
       IAC: "true",
   },
 });
 
 const secondBucket = new aws.s3.BucketV2("segundo-bucket", {
-  bucket: 'segundo-bucket-pos-full-stack-360',
+  bucket: 'segundo-bucket-pos',
   tags: {
       IAC: "true",
   },
